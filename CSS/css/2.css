@@ -1,0 +1,76 @@
+/*selectores*/
+/*selectores universales*/
+*{
+    color: firebrick;
+}
+h1{
+    color: green;
+}
+p{
+    color: indigo;
+}
+/*selectores por clase (recomendable)*/
+.titulo{
+    color: gold;
+    
+}
+.parrafo{
+    color: dodgerblue;
+}
+/*selectores por id*/
+#titulo{
+    color: firebrick;
+}
+#parrafo{
+    color: green;
+}
+/*selectores de atributos*/
+[href]{
+    color: purple;
+}
+/*selector href=#*/
+[href="#"]{
+    color: red;
+}
+/*selector de atributos por clase#*/
+[class~="rojo"]{
+    color: saddlebrown;
+}
+/*[class~="verde"]{
+    color:green;
+}*/
+/*selector de atributos de solo una clase*/
+[class|="verde"]{
+    color:green;
+}
+/*selector de atributos con lo que empiecen con una clase*/
+[class^="rojo"]{
+    color:peru;
+}
+/*selector de atributos con lo que empiecen con una clase $*/
+[class$="verde"]{
+    color:red;
+}
+/*selector de atributos con lo que empiecen con una clase * */
+[class*="verde"]{
+    color:pink;
+}
+/*selectores combinadores*/
+/*toma hermano adyacente del hermano que esta debajo*/
+h1 + h2{
+    color: crimson;
+}
+h2 + h2{/*no tiene efecto*/
+    color: blue;
+}
+/*selector hermano general*/
+h1 ~ h3{
+    color: blue;
+}
+/*selector hijo*/
+p span{
+    color: coral;
+}
+p span{
+    color: black !important;
+}
